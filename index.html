@@ -1,10 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Root Rider AI Learner</title>
+    
+    <!-- Mobile Error Catcher -->
+    <script>
+      window.onerror = function(msg, url, lineNo, columnNo, error) {
+        document.body.innerHTML = '<div style="padding:20px; color:red; font-size:16px; font-weight:bold; background:white; height:100vh; overflow-y:auto; word-wrap: break-word;">' + 
+          'CRASH REPORT:<br><br>' + msg + 
+          '</div>';
+        return false;
+      };
+    </script>
   </head>
   <body>
     <div id="root"></div>
